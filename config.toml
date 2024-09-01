@@ -1,4 +1,4 @@
-base_url = "https://LexKicks.gitlab.io"
+base_url = "https://LexKicks.github.io"
 title = "LexKicks"
 description = "This is an example description"
 build_search_index = false
