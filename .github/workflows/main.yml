@@ -6,9 +6,14 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
-      - name: checkout
+      - name: Checkout code
         uses: actions/checkout@v4
-      - name: build_and_deploy
+
+      - name: Remove previous artifacts
+        run: |
+          rm -rf ./public || true
+
+      - name: Build and Deploy
         uses: shalzz/zola-deploy-action@v0.17.2
         env:
           # Target branch
@@ -16,4 +21,4 @@ jobs:
           # Provide personal access token
           TOKEN: ${{ secrets.TOKEN }}
           # Or if publishing to the same repo, use the automatic token
-          #TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # TOKEN: ${{ secrets.GITHUB_TOKEN }}
