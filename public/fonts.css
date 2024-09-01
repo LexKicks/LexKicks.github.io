@@ -1,1 +1,35 @@
-@font-face{font-family:"Jetbrains Mono";font-style:normal;font-weight:400;src:url("fonts/JetbrainsMono/JetBrainsMono-Regular.ttf"),local("ttf");font-display:swap}@font-face{font-family:"Jetbrains Mono";font-style:normal;font-weight:700;src:url("fonts/JetbrainsMono/JetBrainsMono-Bold.ttf"),local("ttf");font-display:swap}@font-face{font-family:"Space Grotesk";font-style:normal;font-weight:400;src:url("fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf"),local("ttf");font-display:swap}@font-face{font-family:"Space Grotesk";font-style:normal;font-weight:700;src:url("fonts/SpaceGrotesk/SpaceGrotesk-Bold.ttf"),local("ttf");font-display:swap}
+@font-face {
+    font-family: "Jetbrains Mono";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/JetbrainsMono/JetBrainsMono-Regular.ttf") format("truetype"),
+         local("Jetbrains Mono Regular");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jetbrains Mono";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/JetbrainsMono/JetBrainsMono-Bold.ttf") format("truetype"),
+         local("Jetbrains Mono Bold");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf") format("truetype"),
+         local("Space Grotesk Regular");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/SpaceGrotesk/SpaceGrotesk-Bold.ttf") format("truetype"),
+         local("Space Grotesk Bold");
+    font-display: swap;
+}
