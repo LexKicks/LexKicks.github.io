@@ -1,5 +1,6 @@
-+++ 
-title = "Sneaker Doodles: Creating AI-Generated Art with Stable Diffusion" date = 2024-09-01 
++++
+title = "Sneaker Doodles: Creating AI-Generated Art with Stable Diffusion"
+date = 2024-09-01
 +++
 
 #What is Stable Diffusion?
