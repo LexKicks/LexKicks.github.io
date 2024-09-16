@@ -2,7 +2,7 @@
 title = "Sneaker Doodles: Creating AI-Generated Art with Stable Diffusion" date = 2024-09-01 
 +++
 
-# What is Stable Diffusion?
+#What is Stable Diffusion?
 
 Hey, sneakerheads! It’s Lakshita Shetty here, and today, I’m going to take you deeper into how I used Stable Diffusion—one of the most exciting AI technologies out there—to bring my sneaker doodles to life. You're in the right place if you’re curious about how tech and creativity intersect, especially with sneakers. Let’s dive into the magic behind the process!
 
