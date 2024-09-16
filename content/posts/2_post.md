@@ -5,13 +5,13 @@ date = 2024-09-01
 
 #What is Stable Diffusion?
 
-Hey, sneakerheads! Lakshita Shetty here, and today, I'm excited to share how I used Stable Diffusion, an innovative AI technology, to bring my sneaker doodles to life. If you're curious about where creativity and tech meet—especially in sneaker culture—you’re in the right place!
+<p>Hey, sneakerheads! It’s <strong>Lakshita Shetty</strong> here, and today, I'm excited to share how I used <strong>Stable Diffusion</strong>, an innovative AI technology, to bring my sneaker doodles to life. If you're curious about where creativity and tech meet—especially with sneakers—you’re in the right place!</p>
 
-Stable Diffusion is an AI-powered, open-source model released in 2022 by Runway, CompVis, and Stability AI. Built on Latent Diffusion Models (LDMs), users can generate, modify, and upscale images using text prompts. It's a powerful tool for creative projects like mine!
+<p><strong>Stable Diffusion</strong> is an AI-powered, open-source model released in 2022 by Runway, CompVis, and Stability AI. Built on <strong>Latent Diffusion Models (LDMs)</strong>, users can generate, modify, and upscale images using text prompts. It's a powerful tool for creative projects like mine!</p>
 
-Latent Diffusion Models: A New Era in Image Generation
+<h2>Latent Diffusion Models: A New Era in Image Generation</h2>
 
-A Step Beyond GANs
+<h3>A Step Beyond GANs</h3>
 
 You may have heard of Generative Adversarial Networks (GANs), which revolutionized image generation in the past decade. GANs allowed the creation of new images by pitting two neural networks—a generator and a discriminator—against each other. However, despite their success, GANs had some notable limitations:
 1. Lack of Diversity: GANs often need help to generate diverse images and could fall into producing repetitive outputs.
