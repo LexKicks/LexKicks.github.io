@@ -67,7 +67,6 @@ Using Stable Diffusion and prompt engineering, I created sneaker doodles that bl
 
 Though AI and sneakers may seem unlikely companions, they’re a perfect match. Sneakers are a canvas for creativity, and AI pushes design boundaries, blending tech and fashion seamlessly.
 
----
 
 ## A Brief Guide to Stable Diffusion
 
