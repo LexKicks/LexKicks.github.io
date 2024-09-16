@@ -30,7 +30,7 @@ Here’s why LDMs represent a step forward:
 Breaking Down the Technology: How Stable Diffusion Works
 
 <div style="max-width: 400px; margin: 0 auto;">
-    <img src="/images/post_2/Architecture.jpg" alt="Stable Diffusion Architecture" style="width: 100%; height: auto;">
+    <img src="/images/post_2/Architecture.jpg" alt="Stable Diffusion Architecture" style="width: 200%; height: 100%;">
 </div>
 
 Let’s explore how Stable Diffusion works to generate images like the sneaker doodles I created.
