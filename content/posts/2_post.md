@@ -30,6 +30,10 @@ Here’s why LDMs represent a step forward:
 
 Breaking Down the Technology: How Stable Diffusion Works
 
+<div style="max-width: 400px; margin: 0 auto;">
+    <img src="/images/post_2/Architecture.jpg" alt="Stable Diffusion Architecture" style="width: 100%; height: auto;">
+</div>
+
 Let’s explore how Stable Diffusion works to generate images like the sneaker doodles I created.
 
 1. From Pixel Space to Latent Space
@@ -71,7 +75,7 @@ Using Stable Diffusion and prompt engineering, I created sneaker doodles that bl
 
 Though AI and sneakers may seem unlikely companions, they’re a perfect match. Sneakers are a canvas for creativity, and AI pushes design boundaries, blending tech and fashion seamlessly.
 
-A Brief Guide to Stable Diffusion
+[A Brief Guide to Stable Diffusion] (https://www.netlify.com](https://replicate.com/guides/stable-diffusion)
 
 Stable Diffusion is a powerful image generation model that excels in text-to-image tasks but is also capable of inpainting, outpainting, and image-to-image transformations. It allows users to refine results with prompts, negative prompts, and other parameters like guidance scale and image dimensions.
 
