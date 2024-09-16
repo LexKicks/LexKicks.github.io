@@ -13,83 +13,100 @@ date = 2024-09-01
 
 <h3>A Step Beyond GANs</h3>
 
-You may have heard of Generative Adversarial Networks (GANs), which revolutionized image generation in the past decade. GANs allowed the creation of new images by pitting two neural networks—a generator and a discriminator—against each other. However, despite their success, GANs had some notable limitations:
-1. Lack of Diversity: GANs often need help to generate diverse images and could fall into producing repetitive outputs.
-2. Mode Collapse: GANs sometimes create only a limited variety of images, even if the input data is rich.
-3. Difficulty Learning Multimodal Distributions: GANs found capturing datasets with complex, diverse outputs challenging, limiting their flexibility.
+<p>You may have heard of <strong>Generative Adversarial Networks (GANs)</strong>, which revolutionized image generation in the past decade. GANs allowed the creation of new images by pitting two neural networks—a generator and a discriminator—against each other. However, despite their success, GANs had some notable limitations:</p>
 
-Why Latent Diffusion Models (LDMs) are a Game-Changer
+<ul>
+  <li><strong>Lack of Diversity:</strong> GANs often struggle to generate diverse images and could fall into producing repetitive outputs.</li>
+  <li><strong>Mode Collapse:</strong> GANs sometimes create only a limited variety of images, even if the input data is rich.</li>
+  <li><strong>Difficulty Learning Multimodal Distributions:</strong> GANs found capturing datasets with complex, diverse outputs challenging, limiting their flexibility.</li>
+</ul>
 
-LDMs, like Stable Diffusion, take a different approach by operating in latent space—a compressed, lower-dimensional representation of an image—rather than directly in pixel space. This allows the model to focus on high-level features of the image, making it both computationally efficient and capable of producing high-quality, diverse outputs.
+<h3>Why Latent Diffusion Models (LDMs) are a Game-Changer</h3>
 
-Here’s why LDMs represent a step forward:
-1. Efficiency: LDMs reduce computational load while retaining essential image features by working in latent space. This allows Stable Diffusion to run on consumer-grade hardware.
-2. Flexibility: LDMs enable various tasks, such as image-to-image translations, inpainting, and outpainting, all driven by text prompts or other input data.
-3. Quality and Diversity: LDMs can produce more diverse and creative outputs without suffering from mode collapse, as seen in GANs.
+<p><strong>LDMs</strong>, like Stable Diffusion, take a different approach by operating in <strong>latent space</strong>—a compressed, lower-dimensional representation of an image—rather than directly in pixel space. This allows the model to focus on high-level features of the image, making it both computationally efficient and capable of producing high-quality, diverse outputs.</p>
 
-Breaking Down the Technology: How Stable Diffusion Works
+<p>Here’s why LDMs represent a step forward:</p>
+<ul>
+  <li><strong>Efficiency:</strong> LDMs reduce computational load while retaining essential image features by working in latent space. This allows Stable Diffusion to run on consumer-grade hardware.</li>
+  <li><strong>Flexibility:</strong> LDMs enable various tasks, such as image-to-image translations, inpainting, and outpainting, all driven by text prompts or other input data.</li>
+  <li><strong>Quality and Diversity:</strong> LDMs can produce more diverse and creative outputs without suffering from mode collapse, as seen in GANs.</li>
+</ul>
+
+<h2>Breaking Down the Technology: How Stable Diffusion Works</h2>
 
 <div style="max-width: 400px; margin: 0 auto;">
     <img src="/images/post_2/Architecture.jpg" alt="Stable Diffusion Architecture" style="width: 200%; height: 100%;">
 </div>
 
-Let’s explore how Stable Diffusion works to generate images like the sneaker doodles I created.
+<p>Let’s explore how Stable Diffusion works to generate images like the sneaker doodles I created.</p>
 
-1. From Pixel Space to Latent Space
-- We start in Pixel Space, where the raw image data exists as pixel values. Stable Diffusion first compresses this data into Latent Space, a more efficient representation that retains the essential features of the image.
+<h4>1. From Pixel Space to Latent Space</h4>
+<p>We start in Pixel Space, where the raw image data exists as pixel values. Stable Diffusion first compresses this data into Latent Space, a more efficient representation that retains the essential features of the image.</p>
 
-2. Encoding and Decoding with VAE
-- Variational Autoencoder (VAE) handles the transformation between pixel space and latent space:
-  - Encoder (E): Compresses the image into latent space.
-  - Decoder (D): Reconstructs the image into pixel space after noise removal.
+<h4>2. Encoding and Decoding with VAE</h4>
+<p><strong>Variational Autoencoder (VAE)</strong> handles the transformation between pixel space and latent space:</p>
+<ul>
+  <li><strong>Encoder (E):</strong> Compresses the image into latent space.</li>
+  <li><strong>Decoder (D):</strong> Reconstructs the image into pixel space after noise removal.</li>
+</ul>
 
-3. The Diffusion Process
-- Forward Diffusion: The model progressively adds Gaussian noise to the latent representation, systematically corrupting it.
-- Reverse Diffusion: The denoising U-Net removes this noise, working backwards until the clean latent image is restored, guided by the text prompt or conditioning input.
+<h4>3. The Diffusion Process</h4>
+<ul>
+  <li><strong>Forward Diffusion:</strong> The model progressively adds Gaussian noise to the latent representation, systematically corrupting it.</li>
+  <li><strong>Reverse Diffusion:</strong> The denoising U-Net removes this noise, working backwards until the clean latent image is restored, guided by the text prompt or conditioning input.</li>
+</ul>
 
-4. Denoising U-Net: The Engine of Stable Diffusion
-- The Denoising U-Net is at the heart of the image generation process. It uses a cross-attention mechanism (with Query, Key, and Value components) to focus on specific elements of the image based on the input prompt, ensuring alignment with the user’s vision.
+<h4>4. Denoising U-Net: The Engine of Stable Diffusion</h4>
+<p>The <strong>Denoising U-Net</strong> is at the heart of the image generation process. It uses a cross-attention mechanism (with Query, Key, and Value components) to focus on specific elements of the image based on the input prompt, ensuring alignment with the user’s vision.</p>
 
-5. Cross-Attention: Aligning with the Prompt
-- The cross-attention mechanism ensures the model refines the image according to the prompt. For instance, if I input “A colourful doodle of an Air Jordan 1 sneaker,” the cross-attention focuses on the key features of the Air Jordan, guiding the U-Net in generating an appropriate image.
+<h4>5. Cross-Attention: Aligning with the Prompt</h4>
+<p>The cross-attention mechanism ensures the model refines the image according to the prompt. For instance, if I input “A colourful doodle of an Air Jordan 1 sneaker,” the cross-attention focuses on the key features of the Air Jordan, guiding the U-Net in generating an appropriate image.</p>
 
-6. Conditioning Inputs: Guiding the Model
-- The model can take several types of conditioning inputs, including:
-  - Text: Descriptions like “cartoon-style sneaker with graffiti.”
-  - Semantic Maps: Structural information about the image.
-  - Images: Reference images for customization or inspiration.
+<h4>6. Conditioning Inputs: Guiding the Model</h4>
+<p>The model can take several types of conditioning inputs, including:</p>
+<ul>
+  <li><strong>Text:</strong> Descriptions like “cartoon-style sneaker with graffiti.”</li>
+  <li><strong>Semantic Maps:</strong> Structural information about the image.</li>
+  <li><strong>Images:</strong> Reference images for customization or inspiration.</li>
+</ul>
 
-The Role of Prompt Engineering
+<h2>The Role of Prompt Engineering</h2>
 
-Prompt engineering is critical to guiding the model’s creativity. It involves crafting detailed, structured prompts that shape the generated image.
+<p><strong>Prompt engineering</strong> is critical to guiding the model’s creativity. It involves crafting detailed, structured prompts that shape the generated image.</p>
 
-Key Points of Prompt Engineering:
-- Specificity Matters: The more detailed and specific the prompt, the better the output aligns with your vision. For example, “A colourful doodle of an Air Jordan 1 sneaker with bold outlines and a street-style graffiti background.”
-- Iterative Refinement: Generating the perfect image often requires multiple iterations. I ran several iterations, tweaking prompts to adjust the level of abstraction or realism.
-- Negative Prompts: These tell the model what to avoid. If the model introduces unwanted elements, negative prompts can help clean them up.
+<h4>Key Points of Prompt Engineering:</h4>
+<ul>
+  <li><strong>Specificity Matters:</strong> The more detailed and specific the prompt, the better the output aligns with your vision. For example, “A colourful doodle of an Air Jordan 1 sneaker with bold outlines and a street-style graffiti background.”</li>
+  <li><strong>Iterative Refinement:</strong> Generating the perfect image often requires multiple iterations. I ran several iterations, tweaking prompts to adjust the level of abstraction or realism.</li>
+  <li><strong>Negative Prompts:</strong> These tell the model what to avoid. If the model introduces unwanted elements, negative prompts can help clean them up.</li>
+</ul>
 
-The Results: Sneaker Doodles with a Tech-Infused Twist
+<h2>The Results: Sneaker Doodles with a Tech-Infused Twist</h2>
 
-Using Stable Diffusion and prompt engineering, I created sneaker doodles that blend street art with iconic Air Jordan 1 elements. The bold, playful designs capture my vision while staying true to sneaker culture.
+<p>Using <strong>Stable Diffusion</strong> and prompt engineering, I created sneaker doodles that blend street art with iconic Air Jordan 1 elements. The bold, playful designs capture my vision while staying true to sneaker culture.</p>
 
-Though AI and sneakers may seem unlikely companions, they’re a perfect match. Sneakers are a canvas for creativity, and AI pushes design boundaries, blending tech and fashion seamlessly.
+<p>Though AI and sneakers may seem unlikely companions, they’re a perfect match. Sneakers are a canvas for creativity, and AI pushes design boundaries, blending tech and fashion seamlessly.</p>
 
 <a href="https://replicate.com/guides/stable-diffusion">A Brief Guide to Stable Diffusion</a>
 
-Stable Diffusion is a powerful image generation model that excels in text-to-image tasks but can also inpainting, outpainting, and image-to-image transformations. It allows users to refine results with prompts, negative prompts, and other parameters like guidance scale and image dimensions.
+<p><strong>Stable Diffusion</strong> is a powerful image generation model that excels in text-to-image tasks but can also handle inpainting, outpainting, and image-to-image transformations. It allows users to refine results with prompts, negative prompts, and other parameters like guidance scale and image dimensions.</p>
 
-Stable Diffusion Versions:
-- SDXL (2023): Popular for producing high-quality 1024x1024 images.
-- SD1.5 (2022): Known for speed and low memory usage.
-- SD2.1 (2022): Introduced negative prompts but changed image outputs significantly.
-- SDXL Turbo and SD Turbo (2023): Fast versions that produce images in a single step.
+<h4>Stable Diffusion Versions:</h4>
+<ul>
+  <li><strong>SDXL (2023):</strong> Popular for producing high-quality 1024x1024 images.</li>
+  <li><strong>SD1.5 (2022):</strong> Known for speed and low memory usage.</li>
+  <li><strong>SD2.1 (2022):</strong> Introduced negative prompts but changed image outputs significantly.</li>
+  <li><strong>SDXL Turbo and SD Turbo (2023):</strong> Fast versions that produce images in a single step.</li>
+</ul>
 
-Key Features:
-- Prompt & Negative Prompt: Guide the model on what to include or avoid.
-- Guidance Scale: Adjusts how closely the image aligns with the prompt.
-- Inpainting & Outpainting: Modify specific areas of an image or expand the canvas.
-- ControlNet: Guides image generation by adding structure through inputs like depth maps or poses.
+<h4>Key Features:</h4>
+<ul>
+  <li><strong>Prompt & Negative Prompt:</strong> Guide the model on what to include or avoid.</li>
+  <li><strong>Guidance Scale:</strong> Adjusts how closely the image aligns with the prompt.</li>
+  <li><strong>Inpainting & Outpainting:</strong> Modify specific areas of an image or expand the canvas.</li>
+  <li><strong>ControlNet:</strong> Guides image generation by adding structure through inputs like depth maps or poses.</li>
+</ul>
 
-Fine-Tuning & Latent Consistency Models (LCMs)
-Using techniques like Dreambooth or LoRAs, Stable Diffusion can be fine-tuned to generate specific styles or adapt to unique datasets. Latent Consistency Models (LCMs) have recently improved image generation speed, making the model faster and more efficient, especially with SDXL Turbo, which can generate high-quality images in just one step.
+<h4>Fine-Tuning & Latent Consistency Models (LCMs)</h4>
 
+<p>Using techniques like <strong>Dreambooth</strong> or <strong>LoRAs</strong>, Stable Diffusion can be fine-tuned to generate specific styles or adapt to unique datasets. <strong>Latent Consistency Models (LCMs)</strong> have recently improved image generation speed, making the model faster and more efficient, especially with SDXL Turbo, which can generate high-quality images in just one step.</p>
