@@ -1,21 +1,24 @@
-+++ title = "Sneaker Doodles: Creating AI-Generated Art with Stable Diffusion" date = 2024-09-01 +++
++++ 
+title = "Sneaker Doodles: Creating AI-Generated Art with Stable Diffusion"
+date = 2024-09-01 
++++
 
 Hey, sneakerheads! It’s Lakshita Shetty here, and today, I’m going to take you deeper into how I used **Stable Diffusion**—one of the most exciting AI technologies out there—to bring my sneaker doodles to life. You're in the right place if you’re curious about how tech and creativity intersect, especially with sneakers. Let’s dive into the magic behind the process!
 
-#What is Stable Diffusion?
+## What is Stable Diffusion?
 
 **Stable Diffusion** is an AI-powered, open-source image generation model created by Runway, CompVis, and Stability AI. Released in 2022, it’s built on a type of deep learning architecture known as **Latent Diffusion Models (LDMs)**. LDMs offer flexibility to generate various images, modify existing ones, and even upscale image resolution. You can develop high-quality images by providing a text prompt, making it a powerful tool for creative expression.
 
-#Latent Diffusion Models: A New Era in Image Generation
+## Latent Diffusion Models: A New Era in Image Generation
 
-# A Step Beyond GANs
+### A Step Beyond GANs
 
 You may have heard of **Generative Adversarial Networks (GANs)**, which revolutionized image generation in the past decade. GANs allowed the creation of new images by pitting two neural networks—a generator and a discriminator—against each other. However, despite their success, GANs had some notable limitations:
 1. **Lack of Diversity**: GANs often need help to generate diverse images and could fall into producing repetitive outputs.
 2. **Mode Collapse**: GANs sometimes create only a limited variety of images, even if the input data is rich.
 3. **Difficulty Learning Multimodal Distributions**: GANs found capturing datasets with complex, diverse outputs challenging, limiting their flexibility.
 
-# Why Latent Diffusion Models (LDMs) are a Game-Changer
+### Why Latent Diffusion Models (LDMs) are a Game-Changer
 
 LDMs, like Stable Diffusion, take a different approach by operating in **latent space**—a compressed, lower-dimensional representation of an image—rather than directly in pixel space. This allows the model to focus on high-level features of the image, making it both computationally efficient and capable of producing high-quality, diverse outputs.
 
@@ -66,7 +69,6 @@ Let’s explore how Stable Diffusion works to generate images like the sneaker d
 Using Stable Diffusion and prompt engineering, I created sneaker doodles that blend street art with iconic Air Jordan 1 elements. The bold, playful designs capture my vision while staying true to sneaker culture.
 
 Though AI and sneakers may seem unlikely companions, they’re a perfect match. Sneakers are a canvas for creativity, and AI pushes design boundaries, blending tech and fashion seamlessly.
-
 
 ## A Brief Guide to Stable Diffusion
 
