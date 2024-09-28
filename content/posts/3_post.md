@@ -6,13 +6,13 @@ date = 2024-09-03
 #Adidas Originals Superstar
 
 <div style="max-width: 400px; margin: 0 auto;">
-    <img src="/images/post_3/adidas-originals-superstar-80s-nyc-exhibit.png" alt="Adidas Originals Superstar 80s NYC exhibit" style="width: 200%; height: 100%;">
+    <img src="/images/post_3/adidas-originals-superstar-80s-nyc-exhibit.png" alt="Adidas Originals Superstar 80s NYC exhibit" alt="Adidas Originals Superstar 80s NYC exhibit" style="width: 200%; height: 100%; border: none;">
 </div>
 
 <p>Hey, sneaker fam! It’s Lakshita Shetty here, back again to dive into the sneaker that kicked off my love for kicks—the <strong>Adidas Originals Superstar</strong>. This wasn’t just any sneaker for me; it was the first sneaker I ever bought, and honestly, this is where everything started. My passion for sneaker culture, streetwear, and the art behind these shoes all began the moment I laced up my first pair of Superstars.</p>
 
 <div style="max-width: 400px; margin: 0 auto;">
-    <img src="/images/post_3/2020-poster.jpg" alt="Throwback to Adidas Originals Superstar 2020" style="width: 200%; height: 100%;">
+    <img src="/images/post_3/2020-poster.jpg" alt="Throwback to Adidas Originals Superstar 2020" alt="Adidas Originals Superstar 80s NYC exhibit" style="width: 200%; height: 100%; border: none;">
 </div>
 
 <h2>The Origins: From the Court to the Streets</h2>
@@ -22,7 +22,7 @@ date = 2024-09-03
 <p>But while the Superstar debuted on the court, what happened off the court turned it into a cultural icon. The sneaker’s journey into streetwear began in the <strong>1980s</strong> when hip-hop pioneers Run-DMC adopted it as their shoe. They wore them laceless with the tongues pushed out, making a bold fashion statement that matched their music. Their song <strong>"My Adidas"</strong> turned the sneaker into a symbol of the hip-hop movement, leading to the first-ever endorsement deal between a music group and a sportswear brand. The Superstar wasn’t just a sneaker anymore—it became a cultural force.</p>
 
 <div style="max-width: 400px; margin: 0 auto;">
-    <img src="/images/post_3/brand-campaign-blog-superstar-article.png" alt="Blog Superstar Article" style="width: 200%; height: 100%;">
+    <img src="/images/post_3/brand-campaign-blog-superstar-article.png" alt="Blog Superstar Article" alt="Adidas Originals Superstar 80s NYC exhibit" style="width: 200%; height: 100%; border: none;">
 </div>
 
 <h2>My First Pair: Where Everything Started</h2>
@@ -32,8 +32,8 @@ date = 2024-09-03
 <p>That first pair set me on a path of collecting, learning about sneaker history, and understanding how something as simple as footwear could influence culture, fashion, and even art. The Superstar is where my sneaker journey began, and it’s a shoe I’ll always hold close to my heart.</p>
 
 <div style="display: flex; justify-content: center; max-width: 800px; margin: 0 auto;">
-    <img src="/images/post_3/AI-1.jpeg" alt="AI-generated images" style="width: 50%; height: auto;">
-    <img src="/images/post_3/AI-2.jpeg" alt="AI-generated images" style="width: 50%; height: auto;">
+    <img src="/images/post_3/AI-1.jpeg" alt="AI-generated images" style="width: 50%; height: auto;border: none;">
+    <img src="/images/post_3/AI-2.jpeg" alt="AI-generated images" style="width: 50%; height: auto;border: none;">
 </div>
 
 <h2>The Evolution of an Icon</h2>
@@ -44,7 +44,7 @@ date = 2024-09-03
 
 
 <div style="max-width: 400px; margin: 0 auto;">
-    <img src="/images/post_3/CLOT-collection.jpg" alt="Superstar CLOT collection" style="width: 200%; height: 100%;">
+    <img src="/images/post_3/CLOT-collection.jpg" alt="Superstar CLOT collection" style="width: 200%; height: 100%; border: none;">
 </div>
 
 
@@ -54,7 +54,7 @@ date = 2024-09-03
 
 
 <div style="max-width: 400px; margin: 0 auto;">
-    <img src="/images/post_3/50-years.jpg" alt="50-years Poster" style="width: 200%; height: 100%;">
+    <img src="/images/post_3/50-years.jpg" alt="50-years Poster" style="width: 200%; height: 100%; border: none;">
 </div>
 
 <p>For me, the Superstar is more than just footwear—it reminds me of where my sneaker journey began and the culture that inspires me.</p>
