@@ -5,7 +5,7 @@ date = 2024-09-03
 
 #Adidas Originals Superstar
 
-<div style="max-width: 1000px; margin: 0 auto;">
+<div style="max-width: 600px; margin: 0 auto;">
     <img src="/images/post_3/adidas-og-sup.png" alt="Adidas Originals Superstar 80s NYC exhibit" alt="Adidas Originals Superstar 80s NYC exhibit" style="width: 100%; height: auto%; border: none;">
 </div>
 
