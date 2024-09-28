@@ -6,13 +6,13 @@ date = 2024-09-03
 #Adidas Originals Superstar
 
 <div style="max-width: 400px; margin: 0 auto;">
-    <img src="/images/post_3/adidas-originals-superstar-80s-nyc-exhibit.png" alt="Adidas Originals Superstar 80s NYC exhibit" alt="Adidas Originals Superstar 80s NYC exhibit" style="width: 200%; height: 100%; border: none;">
+    <img src="/images/post_3/adidas-originals-superstar-80s-nyc-exhibit.png" alt="Adidas Originals Superstar 80s NYC exhibit" alt="Adidas Originals Superstar 80s NYC exhibit" style="width: 400%; height: 200%; border: none;">
 </div>
 
 <p>Hey, sneaker fam! It’s Lakshita Shetty here, back again to dive into the sneaker that kicked off my love for kicks—the <strong>Adidas Originals Superstar</strong>. This wasn’t just any sneaker for me; it was the first sneaker I ever bought, and honestly, this is where everything started. My passion for sneaker culture, streetwear, and the art behind these shoes all began the moment I laced up my first pair of Superstars.</p>
 
 <div style="max-width: 400px; margin: 0 auto;">
-    <img src="/images/post_3/2020-poster.jpg" alt="Throwback to Adidas Originals Superstar 2020" alt="Adidas Originals Superstar 80s NYC exhibit" style="width: 200%; height: 100%; border: none;">
+    <img src="/images/post_3/2020-poster.jpg" alt="Throwback to Adidas Originals Superstar 2020" alt="Adidas Originals Superstar 80s NYC exhibit" style="width: 400%; height: 200%; border: none;">
 </div>
 
 <h2>The Origins: From the Court to the Streets</h2>
