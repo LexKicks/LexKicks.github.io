@@ -31,9 +31,9 @@ date = 2024-09-03
 
 <p>That first pair set me on a path of collecting, learning about sneaker history, and understanding how something as simple as footwear could influence culture, fashion, and even art. The Superstar is where my sneaker journey began, and it’s a shoe I’ll always hold close to my heart.</p>
 
-<div style="max-width: 400px; margin: 0 auto;">
-    <img src="/images/post_3/AI-1.jpeg" alt="AI-generated images" style="width: 200%; height: 100%;">
-    <img src="/images/post_3/AI-2.jpeg" alt="AI-generated images" style="width: 200%; height: 100%;">
+<div style="display: flex; justify-content: center; max-width: 800px; margin: 0 auto;">
+    <img src="/images/post_3/AI-1.jpeg" alt="AI-generated images" style="width: 50%; height: auto;">
+    <img src="/images/post_3/AI-2.jpeg" alt="AI-generated images" style="width: 50%; height: auto;">
 </div>
 
 <h2>The Evolution of an Icon</h2>
